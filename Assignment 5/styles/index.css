@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-one {
+  margin-top: 8rem;
+}
+
+.section-one img {
+  width: 100%;
+  height: 56rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.section-two {
+  margin-top: 8rem;
+}
+.section-two .max-w-2xl {
+  max-width: 42rem;
+}
+
+.section-three {
+  margin-top: 8rem;
+}
+.section-three .grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 768px) {
+  .section-three .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .section-three .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.section-three .bg-white {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.section-three .bg-white:hover {
+  transform: scale(1.05);
+}
+.section-three .bg-white img {
+  width: 100%;
+  height: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-three .p-4 {
+  padding: 1rem;
+}
+.section-three .text-xl {
+  font-size: 1.25rem;
+}
+.section-three .text-gray-700 {
+  color: #4b5563;
+}
+.section-three .mt-3 {
+  margin-top: 0.75rem;
+}
+.section-three .text-blue-500 {
+  color: #3b82f6;
+}
+.section-three .hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.section-four {
+  margin-top: 8rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.bg-black\\20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=index.css.map */

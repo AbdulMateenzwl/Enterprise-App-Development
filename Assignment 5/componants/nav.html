@@ -1,0 +1,43 @@
+<nav class="bg-blue-500 p-4">
+    <div class="flex items-center justify-between">
+        <div class="flex items-center">
+            <img src="/images/uet-logo.png" alt="UET Lahore" class="h-10 mr-4">
+            <h1 class="text-white text-lg font-bold">UET Lahore</h1>
+        </div>
+        <div class="hidden md:block">
+            <ul class="flex">
+                <li class="mr-6"><a href="index.html" class="text-white hover:text-gray-300">Home</a></li>
+                <li class="mr-6"><a href="about.html" class="text-white hover:text-gray-300">About</a></li>
+                <li class="mr-6"><a href="courses.html" class="text-white hover:text-gray-300">Courses</a></li>
+                <li><a href="contact.html" class="text-white hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+        <div class="md:hidden">
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4">
+        <ul class="flex flex-col">
+            <li class="mb-2"><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+            <li class="mb-2"><a href="#" class="text-white hover:text-gray-300">About</a></li>
+            <li class="mb-2"><a href="#" class="text-white hover:text-gray-300">Courses</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    // JavaScript to toggle mobile menu visibility
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
